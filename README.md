@@ -9,7 +9,7 @@ This project is a conceptual test for an assignement, the main goals where:
 Dillinger uses a number of open source projects to work properly:
 
 * [Bootstrap] -  Front-end open source toolkit
-* [jQuery] - JavaScript library
+* [VIVUS] - Lightweight JavaScript class (with no dependencies) that allows you to animate SVGs
 
 ### Instructions
 
