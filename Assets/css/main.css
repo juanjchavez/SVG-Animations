@@ -1,0 +1,54 @@
+body,html,svg{
+    width:100%;
+    height: 100%;
+    pointer-events:all;      
+    margin:0 auto;
+    }
+.land
+    {
+        fill: #CCCCCC;
+        stroke:black;
+        stroke-opacity: 1;
+        stroke-width:0.5;  
+}
+.land:focus{
+    outline: none;
+}
+.centro:hover{
+    display: block;
+}
+.land:hover{
+    fill: #ff0000;
+}
+.atlantico .land{
+    animation: draw 5s linear, show 2s ease;
+}
+
+.centro .land, .pacifico .land{
+    animation: draw 15s linear, show 2s ease;
+}
+
+
+@keyframes draw {
+from {
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+
+}
+to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 4050;
+
+}
+}
+@keyframes show {
+from {
+    stroke-opacity: 0;
+    fill-opacity: 0;
+
+}
+to {
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+}
